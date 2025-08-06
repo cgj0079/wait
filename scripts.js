@@ -48,7 +48,7 @@ var init = function () {
         ctx.fillRect(0, 0, width, height);
     });
 
-    var traceCount = mobile ? 100 : 125;
+    var traceCount = mobile ? 30 : 45;
     var pointsOrigin = [];
     var i;
     var dr = mobile ? 0.3 : 0.1;
@@ -163,4 +163,5 @@ var init = function () {
 
 var s = document.readyState;
 if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
+
 else document.addEventListener('DOMContentLoaded', init, false);
